@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --theme-color: #e74c3c;
+  --light-color: #fff;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/tech.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+/* Navbar */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: baseline;
+}
+
+/* Navbar toggle button */
+.btn-show {
+  display: none;
+}
+
+/* Logo   */
+.header nav .logo {
+  text-transform: uppercase;
+  color: var(--light-color);
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.header nav .logo span {
+  font-weight: 800;
+  color: var(--theme-color);
+}
+
+/* Nav menus */
+.header .navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.header .navbar ul li {
+  padding: 10px 30px;
+}
+
+.header .navbar ul li a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.header .navbar ul li:hover a {
+  color: var(--theme-color);
+}
+
+.header .navbar ul li.link-btn:hover {
+  color: var(--theme-color);
+  background-color: var(--light-color);
+}
+
+/* Banner */
+.header .banner {
+  color: var(--light-color);
+  position: absolute;
+  left: 0;
+  top: 150px;
+  padding-left: 50px;
+}
+
+.header .banner h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.header .banner h1 span {
+  font-weight: 800;
+  color: var(--theme-color);
+}
+
+.header .banner p {
+  margin: 30px 0;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* Link Button */
+.link-btn {
+  background-color: var(--theme-color);
+  color: var(--light-color);
+  padding: 5px 20px;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+/* Services */
+
+.header .services {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header .services .service {
+  padding: 20px;
+}
+.header .services .service {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.header .services .service p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.header .services .service a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.services .service:nth-child(1) {
+  background-color: #26282c;
+}
+
+.services .service:nth-child(1) h3,
+.services .service:nth-child(1) a {
+  color: var(--light-color);
+}
+
+.services .service:nth-child(1) p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.services .service:nth-child(2) {
+  background-color: #ced4da;
+}
+.services .service:nth-child(3) {
+  background-color: #f1f1f1;
+}
+
+/* Project */
+
+.project {
+  background-color: #ced4da;
+}
+
+.project .row {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.project .col {
+  width: 50vw;
+  height: 100vh;
+  padding: 100px;
+}
+
+.project .col h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+.project .col p {
+  margin-bottom: 30px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.img-box {
+  background-image: url(./images/hand.jpg);
+  background-size: cover;
+  width: 450px;
+  height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+}
+
+/* Top Bar */
+.top {
+  height: 50px;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 15px;
+  background-color: var(--theme-color);
+  display: none;
+}
+
+.top a {
+  color: var(--light-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.top.active {
+  display: block;
+}
+
+/* trend */
+
+.trend {
+  background-color: var(--theme-color);
+  color: var(--light-color);
+}
+
+.trend .row {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trend p {
+  padding: 30px;
+  /* margin: 30px; */
+  line-height: 30px;
+}
+
+.trend h3 {
+  font-size: 30px;
+  font-weight: 500;
+  /* padding: 100px; */
+  /* margin: 30px 0; */
+}
+
+.trend .img-box {
+  width: 800px;
+  height: 400px;
+  margin: 30px 0;
+}
+
+.trend .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
