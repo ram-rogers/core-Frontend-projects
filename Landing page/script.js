@@ -10,3 +10,12 @@ window.addEventListener('scroll', () => {
     }
 })
 
+
+const btnShow = document.querySelector('.btn-show')
+const navbar = document.querySelector('.navbar')
+
+btnShow.addEventListener('click', () => {
+    navbar.classList.toggle('show')
+})
+
+

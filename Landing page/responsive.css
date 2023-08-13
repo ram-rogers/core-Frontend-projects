@@ -1,0 +1,165 @@
+@media (max-width: 768px) {
+  /* Header */
+  .header nav .logo {
+    font-size: 18px;
+  }
+  .header .navbar {
+    display: none;
+    background-color: rgb(0, 0, 0, 00.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .header .navbar ul {
+    flex-direction: column;
+  }
+
+  .header .navbar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .header .banner h1 {
+    font-size: 25px;
+  }
+
+  .banner p {
+    font-size: 12px;
+  }
+
+  .banner .link-btn {
+    font-size: 14px;
+  }
+
+  .header .services {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .header .services .service {
+    padding: 8px;
+  }
+
+  .header .services .service {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .header .services .service h3 {
+    font-size: 12px;
+  }
+
+  .header .services .service p {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+
+  .header .services .service a {
+    font-size: 10px;
+  }
+
+  .btn-show {
+    display: flex;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* Project */
+
+  .project .row {
+    flex-direction: column;
+  }
+  .project .col {
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+  }
+
+  .project .col h3 {
+    font-size: 25px;
+  }
+  .project .col p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .project .link-btn {
+    font-size: 12px;
+  }
+
+  .project .img-box {
+    width: 470px;
+    height: 300px;
+  }
+
+  /* Trend */
+
+  .trend h3 {
+    font-size: 25px;
+    margin: 15px 0;
+  }
+
+  .trend p {
+    font-size: 14px;
+    padding: 0;
+    margin: 15px 0;
+    line-height: 20px;
+  }
+
+  .trend .img-box {
+    margin: 20px 10px;
+    width: 100%;
+    height: 300px;
+  }
+
+  /* feature */
+
+  .feature {
+    height: auto;
+  }
+
+  .feature h3 {
+    font-size: 25px;
+    margin: 15px 0;
+  }
+
+  .feature p {
+    font-size: 14px;
+    line-height: 10px;
+  }
+
+  .feature .row .boxs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* contact */
+
+  .contact .row {
+    flex-direction: column;
+  }
+  .contact .col {
+    width: 100%;
+    height: 50vh;
+    padding: 10%;
+  }
+
+  .form {
+    height: 600px;
+  }
+
+  .des1 {
+    display: block;
+  }
+  .des2 {
+    display: none;
+  }
+}
